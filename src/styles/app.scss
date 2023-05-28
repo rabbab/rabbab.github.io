@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Poppins:wght@400;500;600&family=Roboto&display=swap");
+
+@import "static";
+@import "animation";
+@import "home";
+@import "navbar";
+@import "skills";
+@import "services";
+@import "experience";
+@import "timeline";
+@import "project";
+@import "footer";
+@import "about";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  li {
+    list-style: none;
+  }
+  body {
+    background-color: #ffdeec;
+    color: black;
+    overflow-x: hidden;
+    background-image: url("../assets/bg-texture.png");
+  }
+  // .container{
+  //   width: 75%;
+  //   margin: 0 auto;
+  // }
+  .disableBtn {
+    color: #161616 !important;
+    background-color: rgb(191, 191, 191) !important;
+    cursor: not-allowed !important;
+    padding: 12px 28px;
+    border-radius: 40px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+
+
+  
+  
+  section {
+    height: 100vh;
+    padding: 2rem 9% 2rem;
+  }

@@ -1,0 +1,341 @@
+    .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    background-color: $color1;
+    box-shadow: 0 3px 10px 1px rgb(0 0 0 / 51%);
+    z-index: 999999;
+    }
+
+    .navbar-logo{
+        opacity: 0;
+        animation: slideRight 1s ease forwards;
+        > a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            >img{
+            width: 146px;
+            height: 26.11px;
+            margin-left: 1rem;
+            }
+        }
+    }
+    .navbar-menu {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .navbar-item {
+        margin-right: 20px;
+        >a{
+            text-decoration: none;
+            color: $white;
+            font-weight: bold;
+            font-size: 16px;
+            font-family: "Inter", sans-serif;
+            text-transform: uppercase;
+            padding: 3px 3px;
+         &:hover{
+            border-bottom: 4px solid $color3;
+         }
+        }
+        &:hover{
+            .dropdown-menu {
+                display: block;
+            }
+        }
+        // >a.active {
+        //     border-bottom: 3px solid lightpink;
+        // }
+      }
+      .dropdown-menu {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        margin: 0;
+        background-color: $color1;
+        border-radius: 5px;
+        margin-left: -4px;
+        >li {
+            padding: 10px 10px;
+            border-bottom: 1px solid #ccc;
+          }
+          a{
+            color: $white;
+            &:hover {
+            border-radius: 2px;
+  background-color: $color3;
+          }
+        }
+        li{
+            &:last-child{
+                border-bottom: none;
+            }
+        }
+      }
+      
+      .dropdown__item {
+        &:hover {
+            background-color: $color3;
+            border-radius: 4px;
+        }
+    }
+    .navbar-icon {
+        display: none;
+        font-size: 24px;
+
+    }
+    .email-icon {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 3rem;
+        .social-media-navbar{
+            margin-right: 1rem;
+            >a {
+               display: inline-flex;
+               justify-content: center;
+               align-items: center;
+               width: 40px;
+               height: 35px;
+               font-size: 26px;
+               text-decoration: none;
+               color: $white;
+               background-color: $color3;
+               border-radius: 50px;
+               border: 2px solid $white;
+               margin: 8px -4px 2px 10px;
+               box-shadow: 0 0 10px $color2;
+               transition: 0.5s ease;
+               opacity: 0;
+               animation: slideRight 1.5s ease forwards;
+               animation-delay: 0.5s, 2s;
+            &:hover{
+               color: white;
+               background-color: $color4;
+               border: 2px solid $color3;
+               box-shadow: 0 0 20px $basePurple;
+            } 
+           }
+    }
+        .email {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 6px 11px;
+            background-color: $color3;
+            border-radius: 40px;
+            box-shadow: 0 0 10px $color2;
+            font-size: 16px;
+            letter-spacing: 1px;
+            font-weight: 600;
+            opacity: 0;
+            animation: slideLeft 1s ease forwards;
+            animation-delay: 2s;
+            margin-top: 6px;
+            cursor: pointer;
+          &:hover{
+            background-color: $color4;
+            border: 1px solid $color3;
+            box-shadow: 0 0 20px $basePurple;
+          } > a{
+            color: $white;
+            display: flex;
+          }
+          .mail{
+            display: flex;
+            color: $white;
+            font-size: 22px;
+            align-items: center;
+            padding: 0 0.2rem;
+          } 
+        }
+    }
+    @media screen and (max-width: 1200px) {
+        .social-media-navbar{
+            margin-right: -1rem;
+        }
+        .email-icon {
+            margin-right: 0;
+        }
+    }
+
+      
+
+    @media screen and (max-width: 1090px) {
+        .social-media-navbar{
+            margin-right: -1rem;
+        }
+        .email-icon {
+            margin-right: 0;
+        }
+    }
+    @media screen and (max-width: 1060px) {
+        .navbar-logo{
+            > a {
+                >img{
+                width: 110px;
+                height: 24.11px;
+                margin-left: 0.2rem;
+                }
+            }
+        }
+      .navbar-item {
+        margin-right: 12px;
+        >a{
+            font-size: 15px;
+            padding: 1px 1px;
+     }
+    }
+    .social-media-navbar{
+        display: none;
+    }
+    .email{
+        padding: 3px 6px;
+        font-size: 12px;
+        letter-spacing: 0.5px;
+        font-weight: 600;
+        .mail{
+            font-size: 18px;
+          } 
+    }
+}
+@media screen and (max-width: 870px) {
+    .navbar-logo{
+        > a {
+            >img{
+            width: 110px;
+            height: 20.11px;
+            margin-left: -1px;
+            }
+        }
+    }
+    .navbar-item {
+        margin-right: 8px;
+        >a{
+            font-size: 13px;
+            padding: 1px 1px;
+     }
+    }
+    .email-icon {
+        .email{
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 700px) {
+    .navbar-logo{
+        > a {
+            >img{
+            width: 110px;
+            height: 20.11px;
+            margin-left: -1px;
+            }
+        }
+    }
+    .navbar-menu {
+       margin-left: rem;
+    }
+    .navbar-item {
+        margin-right: 6px;
+        >a{
+            font-size: 13px;
+            padding: 1px 1px;
+     }
+    }
+    .email-icon {
+    .email{
+        display: none;
+    }
+}
+}
+  
+
+@media screen and (max-width: 600px) {
+    .navbar-logo{
+        > a {
+            >img{
+            width: 150px;
+            height: 24.11px;
+            margin-left: 1rem;
+            }
+        }
+    }
+        .navbar-menu {
+            display: none;
+        }
+        .dropdown-menu.active {
+            display: block !important;
+        }
+        .dropdown-menu {
+            display: none;
+            position: static;
+            background-color: $color3;
+            li {
+                &:hover {
+                    border-radius: 2px;
+    background-color: $color2;
+                }
+            }
+            a {
+                &:hover {
+                    border-radius: 2px;
+    background-color: $color2;
+                }
+            }
+        }
+        .navbar-item {
+            &:hover {
+                .dropdown-menu {
+                    display: none;
+                }
+            }
+            margin: 10px 0;
+        }
+        
+          .navbar-menu.active {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: $color1;
+            position: absolute;
+            top: 50px;
+            left: 0;
+            right: 0;
+            padding: 10px;
+            z-index: 1;
+        }
+        .navbar-icon {
+            display: block;
+            cursor: pointer;
+            background-color: transparent;
+            border: none;
+            .menu-icon{
+                display: flex;
+                font-size: 2rem;
+            }
+            .cross-icon{
+                display: flex;
+                font-size: 2rem;
+            }
+        }
+       
+        .navbar-submenu {
+            padding-left: 20px;
+        }
+
+        .email {
+            padding: 5px 12px;
+            margin-left: 23rem;
+            font-size: 16px;
+            .mail{
+                font-size: 20px;
+              } 
+        }
+   
+}

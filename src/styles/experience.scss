@@ -1,0 +1,39 @@
+#experience{
+    background-color: $basePurple;
+    height: 100vh;
+    margin-top: 1rem;
+}
+.portfolio__container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+}
+
+.portfolio__item{
+    background-color: $color4;
+    color: $white;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+    > h3 {
+        font-size: 1rem;
+    }
+}
+.portfolio__item:hover{
+    border-color: $color4;
+    background-color: $color3;
+}
+.portfolio__item_image{
+    border-radius: 1.5rem;
+    overflow: hidden;
+    > img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .portfolio__container{
+        grid-template-columns: 1fr 1fr;
+    }
+}

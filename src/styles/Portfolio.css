@@ -1,0 +1,127 @@
+:root {
+  --darkPurpleColor: #b3005e;
+  --PinkLight: #e90064;
+  --lighPinkLight: #ff5f9e;
+  --textColor: #060047;
+  --yellowColor: #f7fd04;
+}
+/* .heading {
+  text-align: center;
+  font-size: 4.5rem;
+  color: var(--textColor);
+  margin-top: 1rem;
+}
+.heading > span {
+  color: var(--darkPurpleColor);
+} */
+.portfolio {
+  background-color: #f2c7ff;
+}
+.portfolio > h2 {
+  margin-bottom: 4rem;
+}
+.portfolio_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: -2rem;
+}
+
+.portfolio_container .portfolio_box {
+  position: relative;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem var(--PinkLight);
+  overflow: hidden;
+  display: flex;
+}
+.portfolio_box img {
+  width: 100%;
+  transition: 0.5s ease;
+}
+.portfolio_box:hover img {
+  transform: scale(1.1);
+}
+.portfolio_box .portfolio_layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--darkPurpleColor));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 4rem;
+  transform: translateY(100%);
+  transition: 0.5s ease;
+}
+.portfolio_box:hover .portfolio_layer {
+  transform: translateY(0);
+}
+.portfolio_layer > h4 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: white;
+}
+
+.portfolio_layer > p {
+  font-size: 1rem;
+  margin: 1rem auto;
+  color: white;
+}
+
+.contact > h2 {
+  margin-bottom: 3rem;
+}
+
+.contact form {
+  max-width: 50rem;
+  margin: 0.2rem auto;
+  text-align: center;
+}
+
+.contact form .input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  color: var(--textColor);
+  background: white;
+  border-radius: 0.8rem;
+  margin: 0.7rem 0;
+}
+.contact form .input-box input {
+  width: 49%;
+}
+.contact form textarea {
+  resize: none;
+}
+.contact form .contact-button {
+  /* margin-bottom: 2rem; */
+  cursor: pointer;
+  padding: 12px 28px;
+  background-color: var(--darkPurpleColor);
+  border-radius: 40px;
+  /* box-shadow: 0 0 10px var(--PinkLight); */
+  color: white;
+  margin-top: 1rem;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 600;
+  border: 2px solid #52006a;
+}
+.contact-button:hover {
+  color: #ff5f9e;
+  background-color: #52006a;
+  box-shadow: 0 0 20px var(--darkPurpleColor);
+}

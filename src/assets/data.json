@@ -1,0 +1,42 @@
+{
+    "projects": [
+      {
+        "date": "(Jun 2022 – Present",
+        "title": "React.js Developer",
+        "description": "Working with German clients on freelance basis, developed a Next.js project that utilized material UI and connected to the headless CMS Prismic. Developed MERN Stack E-commerce shop with Admin panel using React.js. Experienced with MongoDB (Database), Redux (Workflow), Restful APIs in (Node.js)",
+        "url": "https://reactone-nine.vercel.app",
+        "imgSrc": "https://cdn.pixabay.com/photo/2018/06/07/16/49/virtual-3460451_960_720.jpg"
+      },
+      
+      {
+        "date": "Aug 2021 – Apr 2022",
+        "title": "TechnologyAlly (PHP/Laravel/Angular Developer)",
+        "description": "Worked on various components of USA based project (Broker Source/ Insurica/ Enroll Source) by using Laravel for backend and Angular JS for frontend. Created E-Commerce shop by using Laravel and JS.",
+        "url": "https://www.broker-source.com/",
+        "imgSrc": "/img/broker-source.PNG"
+      },
+      {
+        "date": "Oct 2020 – Jul 2021",
+        "title": "Legendesk (Senior Software Engineer)",
+        "description": "Designed, built, tested and implemented stand-alone modules for Magento 2. Developed DinoHR (HR management system) using Core PHP",
+        "url": "https://www.legendesk.com/",
+        "imgSrc": "img/legendesk.PNG"
+      },
+  
+      {
+        "date": "Aug 2019 – Oct 2020",
+        "title": "Zepcom (Junior Software Developer)",
+        "description": "Working on state of the art project related to Business Intelligence (BI) and Customer Analytics using Shopware 5 and Shopware 6. Introduced new plug-ins and extensions in shopware 5, 6 and Magento 2.3 to make the website more usable and interactive.  Develop Integrations with API-driven third-party systems",
+        "url": "https://www.sportspar.de/",
+        "imgSrc": "img/zepcom.PNG"
+      },
+      {
+        "date": "Mar 2019 – Aug 2019",
+        "title": "A2Z Creatorz (Software Developer)",
+        "description": "An e-commerce project backend website development (multi-lingual) for a client in Saudi Arab and make custom Wordpress theme",
+        "url": "/",
+        "imgSrc": "https://cdn.pixabay.com/photo/2020/03/19/21/25/cactus-4948833_960_720.jpg"
+      }
+    ]
+  }
+  
